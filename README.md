@@ -1,0 +1,73 @@
+# VRSCustomMarkers
+Custom SVG Aircraft Markers for Virtual Radar Server - forked from [shish0r/VRSCustomMarkers](https://github.com/shish0r/VRSCustomMarkers)
+
+## Installing
+
+The following instructions are for a VRS installed on Linux - installing on windows should be very similar.
+
+1) Ensure that the Custom Content Plugin is installed and enabled.
+2) Download MyMarkers1.html into the CustomContent/CustomInjectedFiles folder of your VRS instalation.
+3) In the Custom Content Plugin add an injection for the MyMarkers1.html
+
+![image](https://user-images.githubusercontent.com/66202012/183701733-cab61151-b21b-46e9-bc87-8d401c662eb9.png)
+
+4) Ensure that your VRS is set up to serve SVG images. If you do not have the SVG boxes checked then your VRS will serve .png files and this will have no effect.
+
+![image](https://user-images.githubusercontent.com/66202012/183702047-d948cfbd-0a62-4d47-a3a1-fb5d3f328f4b.png)
+
+5) Refresh your VRS web-page and it should be working.
+
+## Colours
+
+Note that the top section of the file assigns fill colours to the graphics based on various aircraft attributes.
+
+Current Attributes are set for:
+
+- MLAT + ICAO Type Code is SPIT|HURI|P51 = Dark Brown
+- MLAT + Military + Operator = /Navy/ = Kkahi Green (change colour to suit)
+- MLAT + Military = Kkahi Green
+- MLAT = Light Grey
+- Military + Operator = /Navy/ = Green (change colour to suit)
+- Military = Green
+- Operator = /Polizei|Police|Sheriff = Black
+- Operator = /Ambulance/ = Orangey Yellow
+- Operator = /Coastguard/ = dark red (Military Coastguard are still green e.g. U.S.C.G.)
+- Aircraft undefinied registration = dark grey
+- ICAO Type Code is SPIT|HURI|P51 = Brown
+
+## Aircraft Markers
+
+Currently included SVG:
+
+- Spitfire - currently set to "SPIT",  "HURI" and "P51" ICAO types (used to represent warbirds)
+- F35 - set to "F35" and "VF35" ICAO types
+- Eurofighter Typhoon - set to "EUFI" ICAO type
+- Microlight/Ultralight - set to "ULAC" ICAO type
+- CH47 - set to "H47" ICAO type
+- Hawk - set to "HAWK" ICAO type
+- A400M - set to "A400" ICAO type
+- Global Express - set to "GLEX" and "GL5T" ICAO types (used to represent large business jets)
+- C17 - set to "C17" ICAO type
+- EH101 - set to "EH10", "A189" "S61" and "S92" ICAO types (used to represent larger helicopters)
+- V22 - set to "V22" ICAO type
+- Autogyro - set to "MT", "CDUS", "CLON" and "MM16" ICAO types
+- E3 - set to "E3CF" and "E3TF" ICAO types
+- F16 - set to "F16" ICAO type
+- T6 - set to "TEX2", "PC21", "PC12", "TBM7", "TBM8", "TBM9", "M600" and "P46T" ICAO types (used to represent single engine turboprops)
+- Hunter - set to "HUNT" ICAO type
+- AH64 - set to "H64" ICAO type
+- MD11 - set to "MD11" and "DC10" ICAO type
+- Lancaster - set to "LANC" ICAO type
+- PBY-5A - set to "CAT" ICAO type
+- BelugaXL - set to "A3ST" ICAO type
+- B-52 - set to "B52" ICAO type
+- DC-3 - set to "DC3" ICAO type
+- F-15 - set to "F15" ICAO type
+- U2 - set to "U2" ICAO type
+- B1 - set to "B1" ICAO type
+- Tornado - set to "TOR" ICAO type
+- IL-76 - set to "IL76" and "A124" ICAO type
+- C5 - set to "C5" and "C5M" ICAO type
+- AN-225 - set to "A225" ICAO type
+- Saab-39 Grippen - set to SB39 ICAO Type
+
