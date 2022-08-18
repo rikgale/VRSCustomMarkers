@@ -70,4 +70,7 @@ Currently included SVG:
 - C5 - set to "C5" and "C5M" ICAO type
 - AN-225 - set to "A225" ICAO type
 - Saab-39 Grippen - set to SB39 ICAO Type
+- Glider - set to "VENT" and "PK20" ICAO Type (more to be added to this)
+- PC-24 - set to "PC24" ICAO Type
+- JPRO - set to "JPRO" ICAO Type
 
