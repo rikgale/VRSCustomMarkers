@@ -1,6 +1,8 @@
 # VRSCustomMarkers
 Custom SVG Aircraft Markers for Virtual Radar Server - forked from [shish0r/VRSCustomMarkers](https://github.com/shish0r/VRSCustomMarkers)
 
+**Only** works on V3 VRS - which supports SVG aircraft markers.
+
 ## Installing
 
 The following instructions are for a VRS installed on Linux - installing on windows should be very similar.
@@ -48,7 +50,7 @@ Currently included SVG:
 - C17 - set to "C17" ICAO type
 - EH101 - set to "EH10", "A189" "S61" and "S92" ICAO types (used to represent larger helicopters)
 - V22 - set to "V22" ICAO type
-- Autogyro - set to "MT", "CDUS", "CLON" "MM16" and "GYRO" ICAO types
+- Autogyro - set to "MT", "CDUS", "CLON" "MM16" "MM24" and "GYRO" ICAO types
 - E3 - set to "E3CF" and "E3TF" ICAO types
 - F16 - set to "F16" ICAO type
 - T6 - set to "TEX2", "PC21", "PC12", "TBM7", "TBM8", "TBM9", "M600" and "P46T" ICAO types (used to represent single engine turboprops)
