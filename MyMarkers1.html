@@ -26,6 +26,9 @@
                     if(aircraft.operator.val.match(/Ambulance/)) {
                     return "#ffd700";  // yellow
                     }
+					if(aircraft.operator.val.match(/ADAC/)) {
+                    return "#ffd700";  // yellow
+                    }
                     if(aircraft.operator.val.match(/Coastguard|Coast guard/)) {
                     return "#7F0000";  // dark red
                     }
@@ -407,7 +410,7 @@
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeGLID,
                     size: { width: 45, height: 40 },
-                    matches: function( aircraft) { return aircraft.modelIcao.val === 'VENT' || aircraft.modelIcao.val === 'PK20'; }
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'VENT' || aircraft.modelIcao.val === 'PK20' || aircraft.modelIcao.val === 'A33E' || aircraft.modelIcao.val === 'DISC' || aircraft.modelIcao.val === 'DUOD' || aircraft.modelIcao.val === 'ARCP'; }
 				}));
 				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //PC24
                     normalFileName: 'Marker_Airplane.png',
