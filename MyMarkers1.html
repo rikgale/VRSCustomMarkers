@@ -4,6 +4,17 @@
             if(VRS.globalOptions && VRS.globalOptions.aircraftMarkers) {
                 VRS.AircraftMarker.prototype.getSvgFillColour = function (aircraft, isSelected) {
             if(aircraft && !isSelected) {
+				if(aircraft.squawk && aircraft.squawk.val) {
+					if(aircraft.squawk.val == 7700) {
+					return "#FF0000"; // red
+					}
+					if(aircraft.squawk.val == 7600) {
+					return "#00FF21"; // lime green
+					}
+					if(aircraft.squawk.val == 7500) {
+					return "#00FFFF"; // cyan
+					}
+				}
 				if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51') {
                 return "#633000";    // darkish brown
                 }
