@@ -74,4 +74,5 @@ Currently included SVG:
 - Glider - set to "VENT" and "PK20" ICAO Type (more to be added to this)
 - PC-24 - set to "PC24" ICAO Type
 - JPRO - set to "JPRO" ICAO Type
+- UAV - set to "UAV", "Q4" and "Q9" ICAO Type
 
