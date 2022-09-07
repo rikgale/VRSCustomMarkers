@@ -21,9 +21,6 @@
 				if(aircraft.isMlat.val == '1' && aircraft.isMilitary && aircraft.isMilitary.val) {
                 return "#637C22";    // kakhi
                 }
-                if(aircraft.isMlat.val == '1' ) {
-                return "#c0c0c0";    // light grey
-                }
                 if(aircraft.isMilitary && aircraft.isMilitary.val) {
                 return "#3F7F47";    // green
                 }
@@ -49,6 +46,9 @@
                 }
                 if(aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51') {
                 return "#994c00";    // brown
+                }
+				if(aircraft.isMlat.val == '1' ) {
+                return "#c0c0c0";    // light grey
                 }
             }
             return this._Settings.svgFillColourCallback(aircraft, isSelected);
