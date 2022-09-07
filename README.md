@@ -8,7 +8,7 @@ Custom SVG Aircraft Markers for Virtual Radar Server - forked from [shish0r/VRSC
 The following instructions are for a VRS installed on Linux - installing on windows should be very similar.
 
 1) Ensure that the Custom Content Plugin is installed and enabled.
-2) Download MyMarkers1.html into the CustomContent/CustomInjectedFiles folder of your VRS instalation.
+2) Download [MyMarkers1.html](https://raw.githubusercontent.com/rikgale/VRSCustomMarkers/main/MyMarkers1.html) (follow link then right-clink -> SAVE AS) into the CustomContent/CustomInjectedFiles folder of your VRS instalation.
 3) In the Custom Content Plugin add an injection for the MyMarkers1.html
 
 ![image](https://user-images.githubusercontent.com/66202012/183701733-cab61151-b21b-46e9-bc87-8d401c662eb9.png)
