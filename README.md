@@ -62,7 +62,7 @@ Currently included SVG:
 - PBY-5A - set to "CAT" ICAO type
 - BelugaXL - set to "A3ST" ICAO type
 - B-52 - set to "B52" ICAO type
-- DC-3 - set to "DC3" ICAO type
+- DC-3 - set to "DC3T" and "DC3" ICAO type
 - F-15 - set to "F15" ICAO type
 - U2 - set to "U2" ICAO type
 - B1 - set to "B1" ICAO type
@@ -75,4 +75,6 @@ Currently included SVG:
 - PC-24 - set to "PC24" ICAO Type
 - JPRO - set to "JPRO" ICAO Type
 - UAV - set to "UAV", "Q4" and "Q9" ICAO Type
+- B707 - set to "K35R", "B703", "C135" and "K135"
+- VEZE - set to "VEZE" and "VELO" + others TBA
 
