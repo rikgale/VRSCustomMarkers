@@ -77,4 +77,5 @@ Currently included SVG:
 - UAV - set to "UAV", "Q4" and "Q9" ICAO Type
 - B707 - set to "K35R", "B703", "C135" and "K135"
 - VEZE - set to "VEZE" and "VELO" + others TBA
+- E135 - set to "E135", "E145", "E35L" and "E45X"
 
