@@ -29,7 +29,7 @@ Current Attributes are set for:
 - MLAT + Military = Kkahi Green
 - MLAT = Light Grey
 - Military = Green
-- Operator = /Polizei|Police|Sheriff = Black
+- Operator = /Polizei|Police|Sheriff = Dark Blue
 - Operator = /Ambulance/ = Orangey Yellow
 - Operator = /Coastguard/ = dark red (Military Coastguard are still green e.g. U.S.C.G.)
 - Aircraft undefinied registration = dark grey
