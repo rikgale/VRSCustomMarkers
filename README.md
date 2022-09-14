@@ -80,3 +80,4 @@ Currently included SVG:
 - E135 - set to "E135", "E35L", "CRJ2" and "CRJ7"
 - E135 - set to "E145", "E45X", "CRJ9" and "CRJX"
 - SR20 - set to "SR20", "S22T" and "SR22"
+- E4 - set to "E4B" (Custom ICAO for E-4B - see [VRSOperatorFlags](https://github.com/rikgale/VRSOperatorFlags) )
