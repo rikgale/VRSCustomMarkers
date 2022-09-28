@@ -301,7 +301,7 @@
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeGLEX,
                     size: { width: 40, height: 40 },
-                    matches: function( aircraft) { return aircraft.modelIcao.val === 'GLEX' || aircraft.modelIcao.val === 'GL5T' aircraft.modelIcao.val === 'GL7T'; }
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'GLEX' || aircraft.modelIcao.val === 'GL5T' || aircraft.modelIcao.val === 'GL7T'; }
                 }));
                 VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //C17
                     normalFileName: 'Marker_Airplane.png',
