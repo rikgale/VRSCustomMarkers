@@ -81,3 +81,6 @@ Currently included SVG:
 - E145 - set to "E145", "E45X", "CRJ9" and "CRJX"
 - SR20 - set to "SR20", "S22T" and "SR22"
 - E4 - set to "E4B" (Custom ICAO for E-4B - see [VRSOperatorFlags](https://github.com/rikgale/VRSOperatorFlags) )
+- IL62 - set to "IL62" ICAO Type
+- P3 - set to "P3" ICAO Type
+- GA - set to "ARC3" ICAO Type
