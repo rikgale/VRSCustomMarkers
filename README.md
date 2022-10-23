@@ -84,4 +84,5 @@ Currently included SVG:
 - IL62 - set to "IL62" ICAO Type
 - P3 - set to "P3" ICAO Type
 - GA - set to "ARC3" ICAO Type
+
 .... and many others.
