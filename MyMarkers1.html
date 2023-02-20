@@ -34,6 +34,9 @@
                     if(aircraft.operator.val.match(/Ambulance/)) {
                     return "#ffd700";  // yellow
                     }
+					if(aircraft.operator.val.match(/air med|airmed|med-trans|medevac/i)) {
+                    return "#99d0ea";  // light blue
+                    }
 					if(aircraft.operator.val.match(/ADAC/)) {
                     return "#ffd700";  // yellow
                     }
