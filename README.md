@@ -30,7 +30,7 @@ Current Attributes are set for:
 - MLAT = Light Grey
 - Military = Green
 - Operator = /Polizei|Police|Sheriff = Dark Blue
-- Operator = /Ambulance/ = Orangey Yellow
+- Operator = /air med|airmed|med-trans|medevac|ambulance|adac/ = Light blue
 - Operator = /Coastguard/ = dark red (Military Coastguard are still green e.g. U.S.C.G.)
 - Aircraft undefinied registration = dark grey
 - ICAO Type Code is SPIT|HURI|P51 = Brown
