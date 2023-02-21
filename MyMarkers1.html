@@ -25,22 +25,19 @@
                 return "#3F7F47";    // green
                 }
                 if(aircraft.operator && aircraft.operator.val) {
-                    if(aircraft.operator.val.match(/Polizei|police/i)) {
+                    if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland security/i)) {
                     return "#00137F";  // dark blue
                     }
-					if(aircraft.operator.val.match(/Sheriff/i)) {
-                    return "#00137F";  // dark blue
-                    }
-                    if(aircraft.operator.val.match(/Ambulance/)) {
+                    if(aircraft.operator.val.match(/Ambulance/i)) {
                     return "#ffd700";  // yellow
                     }
-					if(aircraft.operator.val.match(/air med|airmed|med-trans|medevac/i)) {
+		    if(aircraft.operator.val.match(/air med|airmed|med-trans|medevac/i)) {
                     return "#99d0ea";  // light blue
                     }
-					if(aircraft.operator.val.match(/ADAC/)) {
+		    if(aircraft.operator.val.match(/ADAC/i)) {
                     return "#ffd700";  // yellow
                     }
-                    if(aircraft.operator.val.match(/Coastguard|Coast guard/)) {
+                    if(aircraft.operator.val.match(/Coastguard|Coast guard/i)) {
                     return "#7F0000";  // dark red
                     }
                 }
