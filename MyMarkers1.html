@@ -3,8 +3,8 @@
         VRS.globalDispatch.hook(VRS.globalEvent.bootstrapCreated, function(bootStrap) {
             if(VRS.globalOptions && VRS.globalOptions.aircraftMarkers) {
                 VRS.AircraftMarker.prototype.getSvgFillColour = function (aircraft, isSelected) {
-            if(aircraft && !isSelected) {
-				if(aircraft.squawk && aircraft.squawk.val) {
+            if(aircraft && !isSelected) {   
+				if(aircraft.squawk && aircraft.squawk.val) { //Squwak colours start
 					if(aircraft.squawk.val == 7700) {
 					return "#FF0000"; // red
 					}
@@ -14,7 +14,7 @@
 					if(aircraft.squawk.val == 7500) {
 					return "#00FFFF"; // cyan
 					}
-				}
+				}  //Squwak colours end
 				if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51') {
                 return "#633000";    // darkish brown
                 }
@@ -27,7 +27,7 @@
                 if(aircraft.isMilitary && aircraft.isMilitary.val) {
                 return "#3F7F47";    // green
                 }
-                if(aircraft.operator && aircraft.operator.val) {
+                if(aircraft.operator && aircraft.operator.val) { //colour buy operator start
                     if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland security/i)) {
                     return "#00137F";  // dark blue
                     }
@@ -43,7 +43,7 @@
                     if(aircraft.operator.val.match(/Coastguard|Coast guard/i)) {
                     return "#7F0000";  // dark red
                     }
-                }
+                } //colour buy operator end
                 if(!aircraft.registration || typeof aircraft.registration.val == "undefined") {
                 return "#333333";    // dark grey
                 }
