@@ -18,6 +18,9 @@
 				if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51') {
                 return "#633000";    // darkish brown
                 }
+		    		if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'CL2T' || aircraft.modelIcao.val === 'CL2P') {
+                return "B24400";  // orange
+                }
 				if(aircraft.isMlat.val == '1' && aircraft.isMilitary && aircraft.isMilitary.val) {
                 return "#637C22";    // kakhi
                 }
@@ -46,6 +49,9 @@
                 }
                 if(aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51') {
                 return "#994c00";    // brown
+                }
+                if(aircraft.modelIcao.val === 'CL2P' || aircraft.modelIcao.val === 'CL2T') {
+                return "CE5200";  // orange
                 }
 				if(aircraft.isMlat.val == '1' ) {
                 return "#999999";    // light grey
