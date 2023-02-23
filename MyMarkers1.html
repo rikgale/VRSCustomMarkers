@@ -1,4 +1,4 @@
-<!-- 2023-02-23 v2 -->
+<!-- 2023-02-23 v3 -->
 <script type="text/javascript">
     if(VRS && VRS.globalDispatch && VRS.serverConfig) {
         VRS.globalDispatch.hook(VRS.globalEvent.bootstrapCreated, function(bootStrap) {
@@ -35,7 +35,7 @@
                     if(aircraft.operator.val.match(/fire/i)) {
                     return "#CE5200";  // orange
                     }
-		    if(aircraft.operator.val.match(/air med|airmed|med-trans|medevac|medical|ambulance|adac|anwb/i)) {
+		    if(aircraft.operator.val.match(/air med|airmed|med-trans|medevac|medical|ambulance|adac|anwb|DRF Luftrettung/i)) {
                     return "#99d0ea";  // light blue
                     }
 		 //   if(aircraft.operator.val.match(/ADAC/i)) {
