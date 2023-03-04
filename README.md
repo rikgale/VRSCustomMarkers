@@ -3,7 +3,7 @@ Custom SVG Aircraft Markers for Virtual Radar Server - forked from [shish0r/VRSC
 
 **Only** works on V3 VRS - which supports SVG aircraft markers.
 
-If you use HFDL into VRS then use MyMarker1HFDL. This colourises the markers based on squwak frequency used. When used in conjunction with ADSB feeds you may get a few random coloured aircraft, but there is no way of differentiating by feed source.
+If you use HFDL into VRS then use MyMarker1HFDL. This colourises the markers based on squwak frequency used when the frequency is set to squwak for HFDL. When used in conjunction with ADSB feeds you may get a few random coloured aircraft, but there is no way of differentiating by feed source.
 
 ## Installing
 
