@@ -1,7 +1,9 @@
 # VRSCustomMarkers
-Custom SVG Aircraft Markers for Virtual Radar Server - forked from [shish0r/VRSCustomMarkers](https://github.com/shish0r/VRSCustomMarkers)
+Custom SVG Aircraft Markers for Virtual Radar Server - forked from [shish0r/VRSCustomMarkers](https://github.com/shish0r/VRSCustomMarkers) Thanks :)
 
 **Only** works on V3 VRS - which supports SVG aircraft markers.
+
+If you use HFDL into VRS then use MyMarker1HFDL. This colourises the markers based on squwak frequency used. When used in conjunction with ADSB feeds you may get a few random coloured aircraft, but there is no way of differentiating by feed source.
 
 ## Installing
 
@@ -85,6 +87,7 @@ Currently included SVG:
 - IL62 - set to "IL62" ICAO Type
 - P3 - set to "P3" ICAO Type
 - GA - set to "ARC3" ICAO Type
+- B17 - set to "B17" ICAO Type
 - Boat/Ship - set to ZZZZ-BOAT
 
 .... and many others.
