@@ -88,6 +88,9 @@ Currently included SVG:
 - P3 - set to "P3" ICAO Type
 - GA - set to "ARC3" ICAO Type
 - B17 - set to "B17" ICAO Type
+- A10 - set to "A10" ICAO Type
+- F18 - set to "F18H" and "F18S" ICAO type
+- E2 - set to "E2" ICAO type
 - Boat/Ship - set to ZZZZ-BOAT
 
 .... and many others.
