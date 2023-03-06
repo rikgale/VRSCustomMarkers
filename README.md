@@ -34,6 +34,7 @@ Current Attributes are set for:
 - Operator = /Polizei|Police|Sheriff = Dark Blue
 - Operator = /air med|airmed|med-trans|medevac|ambulance|adac/ = Light blue
 - Operator = /Coastguard/ = dark red (Military Coastguard are still green e.g. U.S.C.G.)
+- Operator = /draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace
 - Operator = /fire/ or ICAO type code = CL2T|CL2P = burnt orange
 - Aircraft undefinied registration = dark grey
 - ICAO Type Code is SPIT|HURI|P51 = Brown
