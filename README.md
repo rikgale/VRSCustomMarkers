@@ -92,6 +92,7 @@ Currently included SVG:
 - A10 - set to "A10" ICAO Type
 - F18 - set to "F18H" and "F18S" ICAO type
 - E2 - set to "E2" ICAO type
+- L159 - set to "L159", "L39" ICAO Type
 - Boat/Ship - set to ZZZZ-BOAT
 
 .... and many others.
