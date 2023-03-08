@@ -4,7 +4,7 @@
         VRS.globalDispatch.hook(VRS.globalEvent.bootstrapCreated, function(bootStrap) {
             if(VRS.globalOptions && VRS.globalOptions.aircraftMarkers) {
                 VRS.AircraftMarker.prototype.getSvgFillColour = function (aircraft, isSelected) {
-            if(aircraft && !isSelected) {   
+            if(aircraft && !isSelected) { 
 				if(aircraft.squawk && aircraft.squawk.val) { //Squwak colours start
 					if(aircraft.squawk.val == 7700) {
 					return "#FF0000"; // red
@@ -16,7 +16,17 @@
 					return "#00FFFF"; // cyan
 					}
 					
-					}  //Squwak colours end
+				}  //Squwak colours end
+
+
+//  Colour based on regex on registration = working
+					
+//				if(aircraft.registration && aircraft.registration.val) {
+//					if(aircraft.registration.val.match(/^G-/i)) {
+//					return "#FF0000"; // red
+//					}
+//				}
+								
 				if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51') {
 				return "#633000";    // darkish brown
 				}
@@ -60,7 +70,7 @@
                 }
 				if(aircraft.isMlat.val == '1' ) {
                 return "#999999";    // light grey
-                }
+                }		
             }
             return this._Settings.svgFillColourCallback(aircraft, isSelected);
             };
@@ -778,13 +788,13 @@
                     size: { width: 20, height: 20 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'BOATYT'; }	
 				}));
-				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //Yatch
+				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ // Pleasure Craft
                     normalFileName: 'Marker_Airplane.png',
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeBOATPC,
                     size: { width: 21, height: 21 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'BOATPC'; }	
-				}));				
+				}));		
             }
         });
     }
