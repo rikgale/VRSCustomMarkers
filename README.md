@@ -93,6 +93,6 @@ Currently included SVG:
 - F18 - set to "F18H" and "F18S" ICAO type
 - E2 - set to "E2" ICAO type
 - L159 - set to "L159", "L39" ICAO Type
-- Boats/Ships - set to ZZZZ-BOAT (side view of a boat), BOATLG, BOATMD, BOATSM (Top views of boats)
+- Boats/Ships - set to ZZZZ-BOAT (side view of a boat), BOATLG, BOATMD, BOATSM (Top views of Large, Medium, Small boats), BOATAC (Aircraft Carrier), BOATCR (Cruise Liner), BOATYT (Yatch), BOATPC (Pleasure Craft)
 
 .... and many others.
