@@ -61,7 +61,9 @@
                 if(aircraft.isMilitary && aircraft.isMilitary.val) {
                 return "#3F7F47";    // green
                 }
-                if(aircraft.operator && aircraft.operator.val) { //colour buy operator start
+				
+				//colour by operator start
+                if(aircraft.operator && aircraft.operator.val) { 
                     if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland security/i)) {
                     return "#00137F";  // dark blue
                     }
@@ -71,16 +73,19 @@
 					if(aircraft.operator.val.match(/air med|airmed|med-trans|medevac|ambulance|adac/i)) {
                     return "#99d0ea";  // light blue
                     }
-		 //   if(aircraft.operator.val.match(/ADAC/i)) {
-                 //   return "#ffd700";  // yellow
-                 // }
-					if(aircraft.operator.val.match(/draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace/i)) {
+					if(aircraft.operator.val.match(/draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace|aec skyline aviation/i)) {
                     return "#6932FF";  // light purple
                     }
                     if(aircraft.operator.val.match(/Coastguard|Coast guard/i)) {
                     return "#7F0000";  // dark red
                     }
-                } //colour buy operator end
+                } 
+				//colour by operator end
+				
+				
+				if(aircraft.icao.val.match(/^F/) && !aircraft.registration || typeof aircraft.registration.val == "undefined") {
+                return "#808D93";    // sea grey
+                }
                 if(!aircraft.registration || typeof aircraft.registration.val == "undefined") {
                 return "#333333";    // dark grey
                 }
@@ -92,7 +97,7 @@
                 }
 				if(aircraft.isMlat.val == '1' ) {
                 return "#999999";    // light grey
-                }
+                }		
             }
             return this._Settings.svgFillColourCallback(aircraft, isSelected);
             };
@@ -309,7 +314,7 @@
                 svg: "<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n   width=\"24.0\"\n   height=\"24.0\"\n   viewBox=\"0 0 10.583333 10.583333\"\n   id=\"svg2\"\n   version=\"1.1\">\n  <defs\n     id=\"defs4\">\n    <filter\n       style=\"color-interpolation-filters:sRGB;\"\n       id=\"filter4234\">\n      <feFlood\n         flood-opacity=\"1\"\n         flood-color=\"rgb(0,0,0)\"\n         result=\"flood\" />\n      <feComposite\n         in=\"flood\"\n         in2=\"SourceGraphic\"\n         operator=\"in\"\n         result=\"composite\" />\n      <feGaussianBlur\n         in=\"composite\"\n         stdDeviation=\"0.4\"\n         result=\"blur\" />\n      <feComposite\n         in=\"SourceGraphic\"\n         in2=\"blur\"\n         operator=\"over\" />\n    </filter>\n  </defs>\n  <g\n    transform=\"translate(0,0)\"\n  id=\"g18\"\n     style=\"opacity:1\">\n    <path\n       style=\"fill-rule:evenodd;stroke:#000000;stroke-width:0.30;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;filter:url(#filter4234);stroke-miterlimit:4;stroke-dasharray:none\"\n       d=\"m 5.4881363,10.154704 c -0.044652,0.265377 -0.1562828,0.265377 -0.1964698,0.265377 -0.040187,0 -0.1518175,0 -0.1964697,-0.265377 L 3.7556302,10.451042 V 9.9777857 A 0.24112199,0.23883947 0 0 1 3.9520999,9.734523 L 5.0148228,9.2391522 4.8451443,8.5314797 H 4.2602003 V 8.4430206 A 3.6748777,3.6400904 0 0 1 4.1976871,6.7401837 l 0.026791,-0.079613 H 4.7245833 V 5.8157865 H 3.8315389 L 1.3890625,6.3023113 V 5.8909767 c 0,-0.1238427 0.031257,-0.2034559 0.098235,-0.2344165 L 4.7245833,4.064297 V 1.6847483 A 1.9959542,1.9770601 0 0 1 5.2157578,0.19863596 l 0.075909,-0.0663443 0.075909,0.0663443 A 1.9959542,1.9770601 0 0 1 5.8587502,1.6847483 V 4.064297 l 3.237286,1.5922632 c 0.062513,0.030961 0.098235,0.1105738 0.098235,0.2344165 V 6.3023113 L 6.7339333,5.8157865 H 5.8408889 v 0.844784 h 0.5224309 l 0.026791,0.079613 a 3.6793429,3.6445134 0 0 1 -0.066978,1.698414 v 0.088459 H 5.7381887 L 5.5774408,9.2347293 6.6624897,9.7389459 a 0.23219154,0.22999356 0 0 1 0.1562828,0.2344168 v 0.4776793 z\"\n       id=\"outline-path\"\n    />\n  </g>\n</svg>",
                 aircraftMarkerStatusFillPaths: ['outline-path']
             };
-				VRS.EmbeddedSvgs.Marker_TypeBOAT1 = { //Biz Jet Swept Wing MED
+				VRS.EmbeddedSvgs.Marker_TypeBOAT1 = { //Boat Generic
                 svg: "<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n   width=\"24.0\"\n   height=\"24.0\"\n   viewBox=\"0 0 10.583333 10.583333\"\n   id=\"svg2\"\n   version=\"1.1\">\n  <defs\n     id=\"defs4\">\n    <filter\n       style=\"color-interpolation-filters:sRGB;\"\n       id=\"filter4234\">\n      <feFlood\n         flood-opacity=\"1\"\n         flood-color=\"rgb(0,0,0)\"\n         result=\"flood\" />\n      <feComposite\n         in=\"flood\"\n         in2=\"SourceGraphic\"\n         operator=\"in\"\n         result=\"composite\" />\n      <feGaussianBlur\n         in=\"composite\"\n         stdDeviation=\"0.4\"\n         result=\"blur\" />\n      <feComposite\n         in=\"SourceGraphic\"\n         in2=\"blur\"\n         operator=\"over\" />\n    </filter>\n  </defs>\n  <g\n    transform=\"translate(0,0)\"\n  id=\"g18\"\n     style=\"opacity:1\">\n    <path\n       style=\"fill-rule:evenodd;stroke:#000000;stroke-width:0.30;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;filter:url(#filter4234);stroke-miterlimit:4;stroke-dasharray:none\"\n       d=\"M 3.7152569,3.9687499 C 2.72505,5.5941225 2.72505,5.5941225 2.72505,5.5941225 L 0,5.5231111 l 1.2991518,1.9488687 0.2851795,0.2524855 0.1267466,0.094682 0.1109031,0.055231 0.09506,0.055232 0.1821981,0.00789 7.7473801,-0.039451 0.7287928,-2.0119903 0.0079,-0.055231 -0.0079,-0.047341 -0.03169,-0.031561 h -0.07922 L 5.6560628,5.657244 6.2818738,4.5447315 H 7.0898825 L 7.081961,4.0160908 Z\"\n       id=\"outline-path\"\n    />\n  </g>\n</svg>",
                 aircraftMarkerStatusFillPaths: ['outline-path']
             };
@@ -739,7 +744,7 @@
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeB17,
                     size: { width: 30, height: 30 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'B17'; }	
-				}));
+				}));			
 				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //Brrrrrrrrrrrrt
                     normalFileName: 'Marker_Airplane.png',
                     selectedFileName: 'Marker_AirplaneSelected.png',
@@ -753,7 +758,7 @@
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeF18,
                     size: { width: 30, height: 30 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'F18H'|| aircraft.modelIcao.val === 'F18S'; }	
-				}));	
+				}));
 				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //Hawkeye
                     normalFileName: 'Marker_Airplane.png',
                     selectedFileName: 'Marker_AirplaneSelected.png',
@@ -767,7 +772,20 @@
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeL159,
                     size: { width: 25, height: 25 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'L159' || aircraft.modelIcao.val === 'L39'; }	
+				}));
+
+// This MUST remain First in the list of Boat markers				
+				
+				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ // Default Boat - Medium Boat Marker
+                    normalFileName: 'Marker_Airplane.png',
+                    selectedFileName: 'Marker_AirplaneSelected.png',
+                    embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeBOATMD,
+                    size: { width: 30, height: 30 },
+                    matches: function( aircraft) { return aircraft.icao.val.match(/^F/); }	
 				}));	
+// End of This MUST remain First in the list of Boat markers
+
+				
 				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //Large Boat
                     normalFileName: 'Marker_Airplane.png',
                     selectedFileName: 'Marker_AirplaneSelected.png',
@@ -816,7 +834,7 @@
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeBOATPC,
                     size: { width: 21, height: 21 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'BOATPC'; }	
-				}));				
+				}));
             }
         });
     }
