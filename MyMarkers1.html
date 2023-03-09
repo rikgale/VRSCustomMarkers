@@ -18,11 +18,6 @@
 					
 				}  //Squwak colours end
 
-
-		//		if(aircraft.country.val.match(/Un/i)){	
-		//			return "#FF0000"; // red
-		//		}
-
 //  Colour based on regex on registration = working
 					
 //				if(aircraft.registration && aircraft.registration.val) {
@@ -43,7 +38,9 @@
                 if(aircraft.isMilitary && aircraft.isMilitary.val) {
                 return "#3F7F47";    // green
                 }
-                if(aircraft.operator && aircraft.operator.val) { //colour by operator start
+				
+				//colour by operator start
+                if(aircraft.operator && aircraft.operator.val) { 
                     if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland security/i)) {
                     return "#00137F";  // dark blue
                     }
@@ -53,16 +50,14 @@
 					if(aircraft.operator.val.match(/air med|airmed|med-trans|medevac|ambulance|adac/i)) {
                     return "#99d0ea";  // light blue
                     }
-					if(aircraft.operator.val.match(/draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace/i)) {
+					if(aircraft.operator.val.match(/draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace|aec skyline aviation/i)) {
                     return "#6932FF";  // light purple
                     }
-		 //   if(aircraft.operator.val.match(/ADAC/i)) {
-                 //   return "#ffd700";  // yellow
-                 //   }
                     if(aircraft.operator.val.match(/Coastguard|Coast guard/i)) {
                     return "#7F0000";  // dark red
                     }
-                } //colour by operator end
+                } 
+				//colour by operator end
 				
 				
 				if(aircraft.icao.val.match(/^F/) && !aircraft.registration || typeof aircraft.registration.val == "undefined") {
