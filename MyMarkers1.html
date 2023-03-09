@@ -19,6 +19,10 @@
 				}  //Squwak colours end
 
 
+		//		if(aircraft.country.val.match(/Un/i)){	
+		//			return "#FF0000"; // red
+		//		}
+
 //  Colour based on regex on registration = working
 					
 //				if(aircraft.registration && aircraft.registration.val) {
@@ -39,7 +43,7 @@
                 if(aircraft.isMilitary && aircraft.isMilitary.val) {
                 return "#3F7F47";    // green
                 }
-                if(aircraft.operator && aircraft.operator.val) { //colour buy operator start
+                if(aircraft.operator && aircraft.operator.val) { //colour by operator start
                     if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland security/i)) {
                     return "#00137F";  // dark blue
                     }
@@ -58,7 +62,12 @@
                     if(aircraft.operator.val.match(/Coastguard|Coast guard/i)) {
                     return "#7F0000";  // dark red
                     }
-                } //colour buy operator end
+                } //colour by operator end
+				
+				
+				if(aircraft.icao.val.match(/^F/) && !aircraft.registration || typeof aircraft.registration.val == "undefined") {
+                return "#808D93";    // sea grey
+                }
                 if(!aircraft.registration || typeof aircraft.registration.val == "undefined") {
                 return "#333333";    // dark grey
                 }
@@ -745,7 +754,20 @@
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeL159,
                     size: { width: 25, height: 25 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'L159' || aircraft.modelIcao.val === 'L39'; }	
+				}));
+
+// This MUST remain First in the list of Boat markers				
+				
+				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ // Default Boat - Medium Boat Marker
+                    normalFileName: 'Marker_Airplane.png',
+                    selectedFileName: 'Marker_AirplaneSelected.png',
+                    embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeBOATMD,
+                    size: { width: 30, height: 30 },
+                    matches: function( aircraft) { return aircraft.icao.val.match(/^F/); }	
 				}));	
+// End of This MUST remain First in the list of Boat markers
+
+				
 				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //Large Boat
                     normalFileName: 'Marker_Airplane.png',
                     selectedFileName: 'Marker_AirplaneSelected.png',
@@ -788,13 +810,13 @@
                     size: { width: 20, height: 20 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'BOATYT'; }	
 				}));
-				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ // Pleasure Craft
+				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //Yatch
                     normalFileName: 'Marker_Airplane.png',
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeBOATPC,
                     size: { width: 21, height: 21 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'BOATPC'; }	
-				}));		
+				}));
             }
         });
     }
