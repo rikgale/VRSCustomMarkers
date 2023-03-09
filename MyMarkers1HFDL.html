@@ -798,7 +798,7 @@
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeBOATMD,
                     size: { width: 30, height: 30 },
-                    matches: function( aircraft) { return aircraft.modelIcao.val === 'BOATMD'; }	
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'BOATMD' || aircraft.modelIcao.val === 'BOAT'; }	
 				}));
 				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //Small Boat
                     normalFileName: 'Marker_Airplane.png',
