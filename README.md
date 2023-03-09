@@ -46,10 +46,9 @@ Current Attributes are set for:
 - Operator = /Polizei|Police|Sheriff = Dark Blue
 - Operator = /air med|airmed|med-trans|medevac|ambulance|adac/ = Light blue
 - Operator = /Coastguard/ = dark red (Military Coastguard are still green e.g. U.S.C.G.)
-- Operator = /draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace
+- Operator = /draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace|aec skyline aviation) = Purple
 - Operator = /fire/ or ICAO type code = CL2T|CL2P = burnt orange
 - Operator = RNLI || Life Boat = RNLI orange
-- Operator = Private Aggressor Squadrons (draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace|aec skyline aviation) = Purple
 - Aircraft undefinied registration = dark grey
 - ICAO Type Code is SPIT|HURI|P51 = Brown
 - (NEW!) Squawk(s) 7700, 7600, 7500 = Red/Lime Green/Cyan
