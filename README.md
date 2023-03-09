@@ -1,6 +1,9 @@
 # VRSCustomMarkers
 Custom SVG Aircraft Markers for Virtual Radar Server - forked from [shish0r/VRSCustomMarkers](https://github.com/shish0r/VRSCustomMarkers) Thanks :)
 
+### Now supports boat markers.
+
+
 **Only** works on V3 VRS - which supports SVG aircraft markers.
 
 If you use HFDL into VRS then use MyMarker1HFDL. This colourises the markers based on squwak frequency used when the frequency is set to squwak for HFDL. When used in conjunction with ADSB feeds you may get a few random coloured aircraft, but there is no way of differentiating by feed source.
@@ -45,6 +48,8 @@ Current Attributes are set for:
 - Operator = /Coastguard/ = dark red (Military Coastguard are still green e.g. U.S.C.G.)
 - Operator = /draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace
 - Operator = /fire/ or ICAO type code = CL2T|CL2P = burnt orange
+- Operator = RNLI || Life Boat = RNLI orange
+- Operator = Private Aggressor Squadrons (draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace|aec skyline aviation) = Purple
 - Aircraft undefinied registration = dark grey
 - ICAO Type Code is SPIT|HURI|P51 = Brown
 - (NEW!) Squawk(s) 7700, 7600, 7500 = Red/Lime Green/Cyan
