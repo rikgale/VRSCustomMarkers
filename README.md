@@ -1,6 +1,9 @@
 # VRSCustomMarkers
 Custom SVG Aircraft Markers for Virtual Radar Server - forked from [shish0r/VRSCustomMarkers](https://github.com/shish0r/VRSCustomMarkers) Thanks :)
 
+### Now supports boat markers.
+
+
 **Only** works on V3 VRS - which supports SVG aircraft markers.
 
 If you use HFDL into VRS then use MyMarker1HFDL. This colourises the markers based on squwak frequency used when the frequency is set to squwak for HFDL. When used in conjunction with ADSB feeds you may get a few random coloured aircraft, but there is no way of differentiating by feed source.
@@ -9,11 +12,20 @@ If you use HFDL into VRS then use MyMarker1HFDL. This colourises the markers bas
 
 The following instructions are for a VRS installed on Linux - installing on windows should be very similar.
 
+### Normal Version
+
 1) Ensure that the Custom Content Plugin is installed and enabled.
 2) Download [MyMarkers1.html](https://raw.githubusercontent.com/rikgale/VRSCustomMarkers/main/MyMarkers1.html) (follow link then right-clink -> SAVE AS) into the CustomContent/CustomInjectedFiles folder of your VRS instalation.
-3) In the Custom Content Plugin add an injection for the MyMarkers1.html
+3) In the Custom Content Plugin add an injection for the MyMarkers1.html  (Drop down to 4. below)
+
+### HFDL Version
+
+1) Ensure that the Custom Content Plugin is installed and enabled.
+2) Download [MyMarkers1HFDL.html](https://raw.githubusercontent.com/rikgale/VRSCustomMarkers/main/MyMarkers1HFDL.html) (follow link then right-clink -> SAVE AS) into the CustomContent/CustomInjectedFiles folder of your VRS instalation.
+3) In the Custom Content Plugin add an injection for the MyMarkers1HFDL.html
 
 ![image](https://user-images.githubusercontent.com/66202012/183701733-cab61151-b21b-46e9-bc87-8d401c662eb9.png)
+
 
 4) Ensure that your VRS is set up to serve SVG images. If you do not have the SVG boxes checked then your VRS will serve .png files and this will have no effect.
 
@@ -34,8 +46,9 @@ Current Attributes are set for:
 - Operator = /Polizei|Police|Sheriff = Dark Blue
 - Operator = /air med|airmed|med-trans|medevac|ambulance|adac/ = Light blue
 - Operator = /Coastguard/ = dark red (Military Coastguard are still green e.g. U.S.C.G.)
-- Operator = /draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace
+- Operator = /draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace|aec skyline aviation) = Purple
 - Operator = /fire/ or ICAO type code = CL2T|CL2P = burnt orange
+- Operator = RNLI || Life Boat = RNLI orange
 - Aircraft undefinied registration = dark grey
 - ICAO Type Code is SPIT|HURI|P51 = Brown
 - (NEW!) Squawk(s) 7700, 7600, 7500 = Red/Lime Green/Cyan
