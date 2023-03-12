@@ -1,0 +1,94 @@
+<!-- 2023-03-04 -->
+<script type="text/javascript">
+    if(VRS && VRS.globalDispatch && VRS.serverConfig) {
+        VRS.globalDispatch.hook(VRS.globalEvent.bootstrapCreated, function(bootStrap) {
+            if(VRS.globalOptions && VRS.globalOptions.aircraftMarkers) {
+                VRS.AircraftMarker.prototype.getSvgFillColour = function (aircraft, isSelected) {
+				
+			if(aicraft && isSelected) {
+			return "#FF0000"; // red
+			}
+			
+            if(aircraft && !isSelected) { 
+				if(aircraft.squawk && aircraft.squawk.val) { //Squwak colours start
+					if(aircraft.squawk.val == 7700) {
+					return "#FF0000"; // red
+					}
+					if(aircraft.squawk.val == 7600) {
+					return "#00FF21"; // lime green
+					}
+					if(aircraft.squawk.val == 7500) {
+					return "#00FFFF"; // cyan
+					}
+					
+				}  //Squwak colours end
+
+//  Colour based on regex on registration = working
+					
+//				if(aircraft.registration && aircraft.registration.val) {
+//					if(aircraft.registration.val.match(/^G-/i)) {
+//					return "#FF0000"; // red
+//					}
+//				}	
+		
+				if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51') {
+				return "#633000";    // darkish brown
+				}
+		    	if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'CL2T' || aircraft.modelIcao.val === 'CL2P') {
+                return "B24400";  // orange
+                }
+				if(aircraft.isMlat.val == '1' && aircraft.isMilitary && aircraft.isMilitary.val) {
+                return "#637C22";    // kakhi
+                }
+                if(aircraft.isMilitary && aircraft.isMilitary.val) {
+                return "#3F7F47";    // green
+                }
+				
+				//colour by operator start
+                if(aircraft.operator && aircraft.operator.val) { 
+                    if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland security/i)) {
+                    return "#00137F";  // dark blue
+                    }
+                    if(aircraft.operator.val.match(/fire/i)) {
+                    return "#CE5200";  // orange
+                    }
+					if(aircraft.operator.val.match(/air med|airmed|med-trans|medevac|ambulance|adac/i)) {
+                    return "#99d0ea";  // light blue
+                    }
+					if(aircraft.operator.val.match(/draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace|aec skyline aviation/i)) {
+                    return "#6932FF";  // light purple
+                    }
+                    if(aircraft.operator.val.match(/Coastguard|Coast guard|swedish maritime administration|salvamento maritimo|gardacostas/i)) {
+                    return "#7F0000";  // dark red
+                    }
+					if(aircraft.operator.val.match(/rnli|life boat/i)) {
+                    return "#F28D01";  // RNLI Orange
+                    }
+                } 
+				//colour by operator end
+				
+				
+				if(aircraft.icao.val.match(/^F/) && !aircraft.registration || typeof aircraft.registration.val == "undefined") {
+                return "#808D93";    // sea grey
+                }
+                if(!aircraft.registration || typeof aircraft.registration.val == "undefined") {
+                return "#333333";    // dark grey
+                }
+                if(aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51') {
+                return "#994c00";    // brown
+                }
+                if(aircraft.modelIcao.val === 'CL2P' || aircraft.modelIcao.val === 'CL2T') {
+                return "#CE5200";  // orange
+                }
+				if(aircraft.isMlat.val == '1' ) {
+                return "#999999";    // light grey
+                }		
+            }
+            return this._Settings.svgFillColourCallback(aircraft, isSelected);
+            };
+            }
+        });
+    }
+  
+
+</script>
