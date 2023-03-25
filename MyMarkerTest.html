@@ -5,6 +5,10 @@
             if(VRS.globalOptions && VRS.globalOptions.aircraftMarkers) {
                 VRS.AircraftMarker.prototype.getSvgFillColour = function (aircraft, isSelected) {
 				
+				
+	// Aicract Selected Section	START
+
+	
                 if(aircraft.operator && aircraft.operator.val && isSelected) { 
                     if(aircraft.operator.val.match(/ryanair/i)) {
                     return "#00137F";  // dark blue
@@ -35,7 +39,11 @@
                 if(aircraft.isMilitary && aircraft.isMilitary.val && isSelected) {
                 return "#3F7F47";    // green
                 }
-			
+	
+		// Aicract Selected Section	START
+
+
+	
             if(aircraft && !isSelected) { 
 				if(aircraft.squawk && aircraft.squawk.val) { //Squwak colours start
 					if(aircraft.squawk.val == 7700) {
