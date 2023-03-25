@@ -5,9 +5,36 @@
             if(VRS.globalOptions && VRS.globalOptions.aircraftMarkers) {
                 VRS.AircraftMarker.prototype.getSvgFillColour = function (aircraft, isSelected) {
 				
-			if(aicraft && isSelected) {
-			return "#FF0000"; // red
-			}
+                if(aircraft.operator && aircraft.operator.val && isSelected) { 
+                    if(aircraft.operator.val.match(/ryanair/i)) {
+                    return "#00137F";  // dark blue
+                    }
+                    if(aircraft.operator.val.match(/easyjet/i)) {
+                    return "#CE5200";  // orange
+                    }
+					if(aircraft.operator.val.match(/air\smed|airmed|med-trans|medevac|ambulance|hospital|medical|adac|doctor|luftrettung|rettungsflugwacht|luftambulanse/i)) {
+                    return "#99d0ea";  // light blue
+                    }
+					if(aircraft.operator.val.match(/draken|gfd|top\saces|airborne\stactical\sadvantage|Air\sUSA|coastal\sdefense|tactical\sair\ssupport|meta\saerospace|aec\sskyline\saviation|aviation\sdefence\sservice/i)) {
+                    return "#6932FF";  // light purple
+                    }
+                    if(aircraft.operator.val.match(/Coastguard|Coast\sguard|swedish\smaritime\sadministration|salvamento\smaritimo|gardacostas/i)) {
+                    return "#7F0000";  // dark red
+                    }
+					if(aircraft.operator.val.match(/spanish\smaritime\srescue/i)) {
+                    return "#FF00DC";  // dark red
+                    }
+					if(aircraft.operator.val.match(/rnli|life\sboat/i)) {
+                    return "#F28D01";  // RNLI Orange
+                    }
+                }
+				
+				if(aircraft.isMlat.val == '1' && aircraft.isMilitary && aircraft.isMilitary.val && isSelected) {
+                return "#637C22";    // kakhi
+                }
+                if(aircraft.isMilitary && aircraft.isMilitary.val && isSelected) {
+                return "#3F7F47";    // green
+                }
 			
             if(aircraft && !isSelected) { 
 				if(aircraft.squawk && aircraft.squawk.val) { //Squwak colours start
@@ -46,10 +73,10 @@
 				
 				//colour by operator start
                 if(aircraft.operator && aircraft.operator.val) { 
-                    if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland security|department\sof\sjustice/i)) {
+                    if(aircraft.operator.val.match(/ryanair/i)) {
                     return "#00137F";  // dark blue
                     }
-                    if(aircraft.operator.val.match(/fire/i)) {
+                    if(aircraft.operator.val.match(/e/i)) {
                     return "#CE5200";  // orange
                     }
 					if(aircraft.operator.val.match(/air\smed|airmed|med-trans|medevac|ambulance|hospital|medical|adac|doctor|luftrettung|rettungsflugwacht|luftambulanse/i)) {
