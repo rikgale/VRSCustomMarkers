@@ -46,25 +46,28 @@
 				
 				//colour by operator start
                 if(aircraft.operator && aircraft.operator.val) { 
-                    if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland security/i)) {
+                    if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland security|department\sof\sjustice/i)) {
                     return "#00137F";  // dark blue
                     }
                     if(aircraft.operator.val.match(/fire/i)) {
                     return "#CE5200";  // orange
                     }
-					if(aircraft.operator.val.match(/air med|airmed|med-trans|medevac|ambulance|adac/i)) {
+					if(aircraft.operator.val.match(/air\smed|airmed|med-trans|medevac|ambulance|hospital|medical|adac|doctor|luftrettung|rettungsflugwacht|luftambulanse/i)) {
                     return "#99d0ea";  // light blue
                     }
-					if(aircraft.operator.val.match(/draken|gfd|top aces|airborne tactical advantage|Air USA|coastal defense|tactical air support|meta aerospace|aec skyline aviation/i)) {
+					if(aircraft.operator.val.match(/draken|gfd|top\saces|airborne\stactical\sadvantage|Air\sUSA|coastal\sdefense|tactical\sair\ssupport|meta\saerospace|aec\sskyline\saviation|aviation\sdefence\sservice/i)) {
                     return "#6932FF";  // light purple
                     }
-                    if(aircraft.operator.val.match(/Coastguard|Coast guard|swedish maritime administration|salvamento maritimo|gardacostas/i)) {
+                    if(aircraft.operator.val.match(/Coastguard|Coast\sguard|swedish\smaritime\sadministration|salvamento\smaritimo|gardacostas/i)) {
                     return "#7F0000";  // dark red
                     }
-					if(aircraft.operator.val.match(/rnli|life boat/i)) {
+					if(aircraft.operator.val.match(/spanish\smaritimer\sescue/i)) {
+                    return "#FF00DC";  // dark red
+                    }
+					if(aircraft.operator.val.match(/rnli|life\sboat/i)) {
                     return "#F28D01";  // RNLI Orange
                     }
-                } 
+                }
 				//colour by operator end
 				
 				
