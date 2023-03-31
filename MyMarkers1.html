@@ -41,7 +41,7 @@
 				
 				//colour by operator start
                 if(aircraft.operator && aircraft.operator.val) { 
-                    if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland security|department\sof\sjustice/i)) {
+                    if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland\ssecurity|department\sof\sjustice/i)) {
                     return "#00137F";  // dark blue
                     }
                     if(aircraft.operator.val.match(/fire/i)) {
