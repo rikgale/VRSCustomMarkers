@@ -26,7 +26,7 @@
 //					}
 //				}	
 		
-				if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51' || aircraft.modelIcao.val === 'P36') {
+				if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51' || aircraft.modelIcao.val === 'P36' || aircraft.modelIcao.val === 'LANC') {
 				return "#633000";    // darkish brown
 				}
 		    	if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'CL2T' || aircraft.modelIcao.val === 'CL2P') {
@@ -69,7 +69,7 @@
                 if(!aircraft.registration || typeof aircraft.registration.val == "undefined") {
                 return "#333333";    // dark grey
                 }
-                if(aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51') {
+                if(aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51' || aircraft.modelIcao.val === 'P36' || aircraft.modelIcao.val === 'LANC') {
                 return "#994c00";    // brown
                 }
                 if(aircraft.modelIcao.val === 'CL2P' || aircraft.modelIcao.val === 'CL2T') {
