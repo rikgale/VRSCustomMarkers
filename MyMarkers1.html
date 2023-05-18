@@ -26,7 +26,7 @@
 //					}
 //				}	
 		
-				if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51') {
+				if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51' || aircraft.modelIcao.val === 'P36') {
 				return "#633000";    // darkish brown
 				}
 		    	if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'CL2T' || aircraft.modelIcao.val === 'CL2P') {
@@ -384,7 +384,7 @@
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeSPIT,
                     size: { width: 40, height: 40 },
-                    matches: function( aircraft) { return aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51'; }
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P51' || aircraft.modelIcao.val === 'P36'; }
                 }));
                 VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //F35
                     normalFileName: 'Marker_Airplane.png',
