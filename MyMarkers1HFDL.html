@@ -5,6 +5,50 @@
             if(VRS.globalOptions && VRS.globalOptions.aircraftMarkers) {
                 VRS.AircraftMarker.prototype.getSvgFillColour = function (aircraft, isSelected) {
             if(aircraft && !isSelected) {   
+				if(aircraft.squawk && aircraft.squawk.val && aircraft.isMilitary && aircraft.isMilitary.val) { //Squwak colours start Military
+					if(aircraft.squawk.val == 7700) {
+					return "#FF0000"; // red
+					}
+					if(aircraft.squawk.val == 7600) {
+					return "#00FF21"; // lime green
+					}
+					if(aircraft.squawk.val == 7500) {
+					return "#00FFFF"; // cyan
+					}
+					if(aircraft.squawk.val == '2941' || aircraft.squawk.val == '2944' || aircraft.squawk.val == '2992' || aircraft.squawk.val == '2998' || aircraft.squawk.val == '3007' || aircraft.squawk.val == '3016' || aircraft.squawk.val == '3455' || aircraft.squawk.val == '3497' || aircraft.squawk.val == '3900') {
+					return "#5FBF69";    // Light green
+					}
+					if(aircraft.squawk.val == '4654' || aircraft.squawk.val == '4660' || aircraft.squawk.val == '4681' || aircraft.squawk.val == '4687') {
+					return "#57AF60";    // Light green
+					}
+					if(aircraft.squawk.val == '5451' || aircraft.squawk.val == '5502' || aircraft.squawk.val == '5508' || aircraft.squawk.val == '5514' || aircraft.squawk.val == '5529' || aircraft.squawk.val == '5538' || aircraft.squawk.val == '5544' || aircraft.squawk.val == '5547' || aircraft.squawk.val == '5583' || aircraft.squawk.val == '5589' || aircraft.squawk.val == '5538' || aircraft.squawk.val == '5622' || aircraft.squawk.val == '5652' || aircraft.squawk.val == '5655' || aircraft.squawk.val == '5720') {
+					return "#51A359";    // Light green
+					}
+					if(aircraft.squawk.val == '6529' || aircraft.squawk.val == '6532' || aircraft.squawk.val == '6535' || aircraft.squawk.val == '6559' || aircraft.squawk.val == '6565' || aircraft.squawk.val == '6589' || aircraft.squawk.val == '6596' || aircraft.squawk.val == '6619' || aircraft.squawk.val == '6628' || aircraft.squawk.val == '6646' || aircraft.squawk.val == '6652' || aircraft.squawk.val == '6661' || aircraft.squawk.val == '6712') {
+					return "#4B9651";    // Light green
+					}
+					if(aircraft.squawk.val == '8825' || aircraft.squawk.val == '8834' || aircraft.squawk.val == '8842' || aircraft.squawk.val == '8885' || aircraft.squawk.val == '8886' || aircraft.squawk.val == '8894' || aircraft.squawk.val == '8912' || aircraft.squawk.val == '8921' || aircraft.squawk.val == '8927' || aircraft.squawk.val == '8936' || aircraft.squawk.val == '8939' || aircraft.squawk.val == '8942' || aircraft.squawk.val == '8948' || aircraft.squawk.val == '8957' || aircraft.squawk.val == '8977') {
+					return "#448949";    // Mid green
+					}
+					if(aircraft.squawk.val == '10027' || aircraft.squawk.val == '10060' || aircraft.squawk.val == '10063' || aircraft.squawk.val == '10066' || aircraft.squawk.val == '10075' || aircraft.squawk.val == '10081' || aircraft.squawk.val == '10084' || aircraft.squawk.val == '10087' || aircraft.squawk.val == '10093' ) {
+					return "#3E7C41";    // Mid green
+					}
+					if(aircraft.squawk.val == '11184' || aircraft.squawk.val == '11306' || aircraft.squawk.val == '11312' || aircraft.squawk.val == '11318' || aircraft.squawk.val == '11321' || aircraft.squawk.val == '11327' || aircraft.squawk.val == '11348' || aircraft.squawk.val == '11354' || aircraft.squawk.val == '11384' || aircraft.squawk.val == '11387') {
+					return "#387039";    // Mid greenn
+					}
+					if(aircraft.squawk.val == '13264' || aircraft.squawk.val == '13270' || aircraft.squawk.val == '13276' || aircraft.squawk.val == '13303' || aircraft.squawk.val == '13312' || aircraft.squawk.val == '13315' || aircraft.squawk.val == '13321' || aircraft.squawk.val == '13324' || aircraft.squawk.val == '13342' || aircraft.squawk.val == '13351' || aircraft.squawk.val == '13354') {
+					return "#336633";    // Dark green
+					}
+					if(aircraft.squawk.val == '15025') {
+					return "#2D5B2D";    // Dark green
+					}
+					if(aircraft.squawk.val == '17901' || aircraft.squawk.val == '17912' || aircraft.squawk.val == '17916' || aircraft.squawk.val == '17919' || aircraft.squawk.val == '17922' || aircraft.squawk.val == '17928' || aircraft.squawk.val == '17934' || aircraft.squawk.val == '17958' || aircraft.squawk.val == '17967' || aircraft.squawk.val == '17985') {
+					return "#274F27";    // Dark green
+					}
+					if(aircraft.squawk.val == '21928' || aircraft.squawk.val == '21931' || aircraft.squawk.val == '21934' || aircraft.squawk.val == '21937' || aircraft.squawk.val == '21949' || aircraft.squawk.val == '21955' || aircraft.squawk.val == '21982' || aircraft.squawk.val == '21990' || aircraft.squawk.val == '21997') {
+					return "#214221";    // Dark green
+					}
+					}  //Squwak colours end - Military
 				if(aircraft.squawk && aircraft.squawk.val) { //Squwak colours start
 					if(aircraft.squawk.val == 7700) {
 					return "#FF0000"; // red
