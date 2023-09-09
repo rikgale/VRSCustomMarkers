@@ -726,12 +726,12 @@
                     size: { width: 42, height: 42 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'IL62'; }
 				}));			
-				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //GA
+				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //GA 
                     normalFileName: 'Marker_Airplane.png',
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeGA,
                     size: { width: 25, height: 25 },
-                    matches: function( aircraft) { return aircraft.modelIcao.val === 'ARC3' || aircraft.modelIcao.val === 'JT1' || aircraft.modelIcao.val === 'AT8T' || aircraft.modelIcao.val === 'U16' || aircraft.modelIcao.val === 'CC11'; }
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'ARC3' || aircraft.modelIcao.val === 'JT1' || aircraft.modelIcao.val === 'AT8T' || aircraft.modelIcao.val === 'U16' || aircraft.modelIcao.val === 'CC11' || aircraft.modelIcao.val === 'ZZZZ-SMS1'; }
 				}));	
 				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //P3
                     normalFileName: 'Marker_Airplane.png',
