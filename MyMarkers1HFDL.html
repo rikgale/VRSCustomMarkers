@@ -505,7 +505,7 @@
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeULAC,
                     size: { width: 40, height: 40 },
-                    matches: function( aircraft) { return aircraft.modelIcao.val === 'ULAC' || aircraft.modelIcao.val === 'SSDR'; }
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'ULAC' || aircraft.modelIcao.val === 'SSDR' || aircraft.modelIcao.val === 'PULR' || aircraft.modelIcao.val === 'HYPR'; }
                 }));
                 VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //H47
                     normalFileName: 'Marker_Airplane.png',
