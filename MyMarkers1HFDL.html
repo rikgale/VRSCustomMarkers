@@ -121,7 +121,7 @@
 					if(aircraft.operator.val.match(/draken|gfd|top\saces|airborne\stactical\sadvantage|Air\sUSA|coastal\sdefense|tactical\sair\ssupport|meta\saerospace|aec\sskyline\saviation|aviation\sdefence\sservice|fr\saviation|hunter\saviation/i)) {
                     return "#6932FF";  // light purple
                     }
-                   if(aircraft.operator.val.match(/Coastguard|Coast\sguard|swedish\smaritime\sadministration|salvamento\smaritimo|gardacostas|spanish\smaritime\srescue|channel\sislands\sair\ssearch|surveillance\saustralia/i)) {
+                     if(aircraft.operator.val.match(/Coastguard|Coast\sguard|swedish\smaritime\sadministration|salvamento\smaritimo|gardacostas|spanish\smaritime\srescue|channel\sislands\sair\ssearch|surveillance\saustralia|frivilliga\sflygkaren/i)) {
                     return "#7F0000";  // dark red
                     }
 					if(aircraft.operator.val.match(/rnli|life\sboat/i)) {
@@ -1061,6 +1061,13 @@
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeBOATPC,
                     size: { width: 21, height: 21 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'BOATPC'; }	
+				}));
+		    VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //GA
+                    normalFileName: 'Marker_Airplane.png',
+                    selectedFileName: 'Marker_AirplaneSelected.png',
+                    embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeGA,
+                    size: { width: 25, height: 25 },
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'AIS'; }
 				}));
             }
         });
