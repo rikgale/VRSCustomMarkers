@@ -41,13 +41,13 @@
 				
 				//colour by operator start
                 if(aircraft.operator && aircraft.operator.val) { 
-                    if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland\ssecurity|department\sof\sjustice/i)) {
+                    if(aircraft.operator.val.match(/Polizei|police|sheriff|homeland\ssecurity|department\sof\sjustice|border\sforce/i)) {
                     return "#00137F";  // dark blue
                     }
                     if(aircraft.operator.val.match(/fire/i)) {
                     return "#CE5200";  // orange
                     }
-					if(aircraft.operator.val.match(/air\smed|airmed|med-trans|medevac|ambulance|hospital|medical|adac|doctor|luftrettung|rettungsflugwacht|luftambulanse/i)) {
+					if(aircraft.operator.val.match(/air\smed|airmed|med-trans|medevac|ambulance|hospital|medical|adac|doctor|luftrettung|rettungsflugwacht|luftambulanse|mercy|life\sflight/i)) {
                     return "#99d0ea";  // light blue
                     }
 					if(aircraft.operator.val.match(/draken|gfd|top\saces|airborne\stactical\sadvantage|Air\sUSA|coastal\sdefense|tactical\sair\ssupport|meta\saerospace|aec\sskyline\saviation|aviation\sdefence\sservice|fr\saviation|hunter\saviation/i)) {
