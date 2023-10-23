@@ -950,7 +950,14 @@
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeFFLO,
                     size: { width: 26, height: 26 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'FFLO'; }	
-				}));				
+				}));	
+					VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ // DHC4
+                    normalFileName: 'Marker_Airplane.png',
+                    selectedFileName: 'Marker_AirplaneSelected.png',
+                    embeddedSvg: VRS.EmbeddedSvgs.Marker_Medium2TurboProp,
+                    size: { width: 40, height: 40 },
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'DHC4'; }	
+				}));                
 				
 // BOATS BELOW HERE ----------------------------------------- BOATS BELOW HERE				
 				
