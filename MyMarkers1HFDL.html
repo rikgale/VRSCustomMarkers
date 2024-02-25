@@ -1050,6 +1050,13 @@
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeA4,
                     size: { width: 27, height: 27 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'A4'; }	
+				}));  
+				VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //UHEL - using built in heli marker	
+                    normalFileName: 'Marker_Airplane.png',
+                    selectedFileName: 'Marker_AirplaneSelected.png',
+                    embeddedSvg: VRS.EmbeddedSvgs.Marker_Helicopter,
+                    size: { width: 32, height: 32 },
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'UHEL'; }
 				}));                
 				
 // BOATS BELOW HERE ----------------------------------------- BOATS BELOW HERE				
