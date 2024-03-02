@@ -15,6 +15,15 @@
 					if(aircraft.squawk.val == 7500) {
 					return "#00FFFF"; // cyan
 					}
+                    if(aircraft.squawk.val == 1111) {  // for use with acars2pos
+					return "#112311"; // Dark Grey
+					}
+                    if(aircraft.squawk.val == 2222) {  // for use with acars2pos
+					return "#1E3F1E"; // Light Grey
+					}
+                    if(aircraft.squawk.val == 3333) {  // for use with acars2pos
+					return "#183318"; // Mid Grey
+					}
 					if(aircraft.squawk.val == '2941' || aircraft.squawk.val == '2944' || aircraft.squawk.val == '2992' || aircraft.squawk.val == '2998' || aircraft.squawk.val == '3007' || aircraft.squawk.val == '3016' || aircraft.squawk.val == '3455' || aircraft.squawk.val == '3497' || aircraft.squawk.val == '3900') {
 					return "#5FBF69";    // Light green
 					}
