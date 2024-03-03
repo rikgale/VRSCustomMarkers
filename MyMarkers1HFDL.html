@@ -22,7 +22,7 @@
 					return "#1E3F1E"; // Light Grey
 					}
                     if(aircraft.squawk.val == 3333) {  // for use with acars2pos
-					return "#183318"; // Mid Grey
+					return "#ffffff00"; // Mid Grey
 					}
 					if(aircraft.squawk.val == '2941' || aircraft.squawk.val == '2944' || aircraft.squawk.val == '2992' || aircraft.squawk.val == '2998' || aircraft.squawk.val == '3007' || aircraft.squawk.val == '3016' || aircraft.squawk.val == '3455' || aircraft.squawk.val == '3497' || aircraft.squawk.val == '3900') {
 					return "#5FBF69";    // Light green
@@ -69,13 +69,13 @@
 					return "#00FFFF"; // cyan
 					}
                     if(aircraft.squawk.val == 1111) {  // for use with acars2pos
-					return "#262626"; // Dark Grey
+					return "#26262680"; // Dark Grey
 					}
                     if(aircraft.squawk.val == 2222) {  // for use with acars2pos
 					return "#D8D8D8"; // Light Grey
 					}
                     if(aircraft.squawk.val == 3333) {  // for use with acars2pos
-					return "#7F7F7F"; // Mid Grey
+					return "#7f7f7f80"; // Mid Grey
 					}
 					if(aircraft.squawk.val == '2941' || aircraft.squawk.val == '2944' || aircraft.squawk.val == '2992' || aircraft.squawk.val == '2998' || aircraft.squawk.val == '3007' || aircraft.squawk.val == '3016' || aircraft.squawk.val == '3455' || aircraft.squawk.val == '3497' || aircraft.squawk.val == '3900') {
 					return "#fc5353";    // soft red
@@ -150,10 +150,10 @@
 				
 				
 				if(aircraft.icao.val.match(/^F/) && !aircraft.registration || typeof aircraft.registration.val == "undefined") {
-                return "#808D93";    // sea grey
+                return "#808D9300";    // sea grey
                 }
                 if(!aircraft.registration || typeof aircraft.registration.val == "undefined") {
-                return "#333333";    // dark grey
+                return "#33333300";    // dark grey
                 }
                 if(aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P36' || aircraft.modelIcao.val === 'P38' || aircraft.modelIcao.val === 'P39' || aircraft.modelIcao.val === 'P40' || aircraft.modelIcao.val === 'P47' || aircraft.modelIcao.val === 'P51' || aircraft.modelIcao.val === 'P63' || aircraft.modelIcao.val === 'VALI' || aircraft.modelIcao.val === 'T6' || aircraft.modelIcao.val === 'ZERO' || aircraft.modelIcao.val === 'ME08' || aircraft.modelIcao.val === 'ME09' || aircraft.modelIcao.val === 'ME62' || aircraft.modelIcao.val === 'FW90' || aircraft.modelIcao.val === 'WCAT' || aircraft.modelIcao.val === 'HCAT' || aircraft.modelIcao.val === 'BCAT' || aircraft.modelIcao.val === 'TCAT' || aircraft.modelIcao.val === 'CORS' || aircraft.modelIcao.val === 'FURY' || aircraft.modelIcao.val === 'YAK1' || aircraft.modelIcao.val === 'YAK3' || aircraft.modelIcao.val === 'YAK9' || aircraft.modelIcao.val === 'LANC' || aircraft.modelIcao.val === 'B17' || aircraft.modelIcao.val === 'B24' || aircraft.modelIcao.val === 'B25' || aircraft.modelIcao.val === 'B26' || aircraft.modelIcao.val === 'B29' || aircraft.modelIcao.val === 'SBD' || aircraft.modelIcao.val === 'TBM' || aircraft.modelIcao.val === 'CAT' || aircraft.modelIcao.val === 'F86' || aircraft.modelIcao.val === 'MG15' || aircraft.modelIcao.val === 'MG17') {
                 return "#994c00";    // brown
