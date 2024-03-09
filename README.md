@@ -51,7 +51,9 @@ Current Attributes are set for:
 - Operator = RNLI || Life Boat = RNLI orange
 - Aircraft undefinied registration = dark grey
 - ICAO Type Code is SPIT|HURI|P51 = Brown
-- (NEW!) Squawk(s) 7700, 7600, 7500 = Red/Lime Green/Cyan
+- (NEW!) Squawk(s) 7700, 7600, 7500 = Red/Lime Green/Cyan + colours for HFDL/ACARS/VDLM2 bands and freqs. See below for key.
+
+  ![Colour Grid](https://raw.githubusercontent.com/rikgale/VRSCustomMarkers/main/Images/SquawkColourGrid.bmp)
 
 ## Aircraft Markers
 
