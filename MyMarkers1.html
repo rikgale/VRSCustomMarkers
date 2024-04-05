@@ -62,6 +62,14 @@
                 } 
                 //colour by operator end
                 
+                // catch those UK Air Ambo that are not registered with Air Ambulance in the operator string
+                if(aircraft.callsign && aircraft.callsign.val) {
+                    if(aircraft.callsign.val.startsWith("HLE")) {
+                    return "#99d0ea";  // light blue
+                    }
+                }
+				
+                
                 
                 if(aircraft.icao.val.match(/^F/) && !aircraft.registration || typeof aircraft.registration.val == "undefined") {
                 return "#808D93";    // sea grey
