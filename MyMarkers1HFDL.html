@@ -4,8 +4,9 @@
         VRS.globalDispatch.hook(VRS.globalEvent.bootstrapCreated, function(bootStrap) {
             if(VRS.globalOptions && VRS.globalOptions.aircraftMarkers) {
                 VRS.AircraftMarker.prototype.getSvgFillColour = function (aircraft, isSelected) {
-            if(aircraft && !isSelected) {   
-				if(aircraft.squawk && aircraft.squawk.val && aircraft.isMilitary && aircraft.isMilitary.val) { //Squwak colours start Military
+            if(aircraft && !isSelected) {
+
+                if(aircraft.squawk && aircraft.squawk.val && aircraft.isMilitary && aircraft.isMilitary.val) { //EM Squwak colours start Military 
 					if(aircraft.squawk.val == 7700) {
 					return "#FF0000"; // red
 					}
@@ -15,7 +16,10 @@
 					if(aircraft.squawk.val == 7500) {
 					return "#00FFFF"; // cyan
 					}
-                    if(aircraft.squawk.val == 1111) {  // for use with acars2pos
+                }
+            if (!aircraft.speed.val) {    //speed check - if empty can assign hfdl freq2squawk colours
+				if(aircraft.squawk && aircraft.squawk.val && aircraft.isMilitary && aircraft.isMilitary.val) { //Squwak colours start Military
+					if(aircraft.squawk.val == 1111) {  // for use with acars2pos
 					return "#112311"; // Dark Grey
 					}
                     if(aircraft.squawk.val == 2222) {  // for use with acars2pos
@@ -58,7 +62,9 @@
 					return "#214221";    // Dark green
 					}
 					}  //Squwak colours end - Military
-				if(aircraft.squawk && aircraft.squawk.val) { //Squwak colours start
+            }    
+                    
+                if(aircraft.squawk && aircraft.squawk.val) { //Squawk colours start EM
 					if(aircraft.squawk.val == 7700) {
 					return "#FF0000"; // red
 					}
@@ -68,7 +74,12 @@
 					if(aircraft.squawk.val == 7500) {
 					return "#00FFFF"; // cyan
 					}
-                    if(aircraft.squawk.val == 1111) {  // for use with acars2pos
+                }
+                    
+                    
+            if (!aircraft.speed.val) { //speed check - if empty can assign hfdl freq2squawk colours
+				if(aircraft.squawk && aircraft.squawk.val) { //Squawk colours start
+					if(aircraft.squawk.val == 1111) {  // for use with acars2pos
 					return "#26262680"; // Dark Grey
 					}
                     if(aircraft.squawk.val == 2222) {  // for use with acars2pos
@@ -129,6 +140,7 @@
 					return "#516853";    // even darker minty green pastel 10% trans
 					}
 					}  //Squwak colours end
+            }
 					
 				if(aircraft.isMlat.val == '1' && aircraft.modelIcao.val === 'SPIT' || aircraft.modelIcao.val === 'HURI' || aircraft.modelIcao.val === 'P36' || aircraft.modelIcao.val === 'P38' || aircraft.modelIcao.val === 'P39' || aircraft.modelIcao.val === 'P40' || aircraft.modelIcao.val === 'P47' || aircraft.modelIcao.val === 'P51' || aircraft.modelIcao.val === 'P63' || aircraft.modelIcao.val === 'VALI' || aircraft.modelIcao.val === 'T6' || aircraft.modelIcao.val === 'ZERO' || aircraft.modelIcao.val === 'ME08' || aircraft.modelIcao.val === 'ME09' || aircraft.modelIcao.val === 'ME62' || aircraft.modelIcao.val === 'FW90' || aircraft.modelIcao.val === 'WCAT' || aircraft.modelIcao.val === 'HCAT' || aircraft.modelIcao.val === 'BCAT' || aircraft.modelIcao.val === 'TCAT' || aircraft.modelIcao.val === 'CORS' || aircraft.modelIcao.val === 'FURY' || aircraft.modelIcao.val === 'YAK1' || aircraft.modelIcao.val === 'YAK3' || aircraft.modelIcao.val === 'YAK9' || aircraft.modelIcao.val === 'LANC' || aircraft.modelIcao.val === 'B17' || aircraft.modelIcao.val === 'B24' || aircraft.modelIcao.val === 'B25' || aircraft.modelIcao.val === 'B26' || aircraft.modelIcao.val === 'B29' || aircraft.modelIcao.val === 'SBD' || aircraft.modelIcao.val === 'TBM' || aircraft.modelIcao.val === 'CAT' || aircraft.modelIcao.val === 'F86' || aircraft.modelIcao.val === 'MG15' || aircraft.modelIcao.val === 'MG17') {
 				return "#633000";    // darkish brown
