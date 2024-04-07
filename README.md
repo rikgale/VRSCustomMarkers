@@ -1,5 +1,5 @@
 # VRSCustomMarkers
-Custom SVG Aircraft and boat Markers for Virtual Radar Server - forked from [shish0r/VRSCustomMarkers](https://github.com/shish0r/VRSCustomMarkers) Thanks :)
+Custom SVG Aircraft and Boat markers for Virtual Radar Server - forked from [shish0r/VRSCustomMarkers](https://github.com/shish0r/VRSCustomMarkers) Thanks :)
 
 
 **Only** works on V3 VRS - which supports SVG aircraft markers.
