@@ -12,17 +12,11 @@ If you use HFDL into VRS then use MyMarker1HFDL. This colourises the markers bas
 
 The following instructions are for a VRS installed on Linux - installing on windows should be very similar.
 
-### Normal Version
 
 1) Ensure that the Custom Content Plugin is installed and enabled.
 2) Download [MyMarkers1.html](https://raw.githubusercontent.com/rikgale/VRSCustomMarkers/main/MyMarkers1.html) (follow link then right-clink -> SAVE AS) into the CustomContent/CustomInjectedFiles folder of your VRS instalation.
 3) In the Custom Content Plugin add an injection for the MyMarkers1.html  (Drop down to 4. below)
 
-### HFDL Version
-
-1) Ensure that the Custom Content Plugin is installed and enabled.
-2) Download [MyMarkers1HFDL.html](https://raw.githubusercontent.com/rikgale/VRSCustomMarkers/main/MyMarkers1HFDL.html) (follow link then right-clink -> SAVE AS) into the CustomContent/CustomInjectedFiles folder of your VRS instalation.
-3) In the Custom Content Plugin add an injection for the MyMarkers1HFDL.html
 
 ![image](https://user-images.githubusercontent.com/66202012/183701733-cab61151-b21b-46e9-bc87-8d401c662eb9.png)
 
