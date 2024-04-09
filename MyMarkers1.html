@@ -781,7 +781,7 @@
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeJPRO,
                     size: { width: 30, height: 30 },
-                    matches: function( aircraft) { return aircraft.modelIcao.val === 'JPRO'; }
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'JPRO' || aircraft.modelIcao.val === 'STRK'; }
                 }));        
                 VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //UAV
                     normalFileName: 'Marker_Airplane.png',
