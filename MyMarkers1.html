@@ -920,6 +920,13 @@
                     size: { width: 36, height: 36 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'ZGND'; }
                 }));    
+                VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //GND
+                    normalFileName: 'Marker_Airplane.png',
+                    selectedFileName: 'Marker_AirplaneSelected.png',
+                    embeddedSvg: VRS.EmbeddedSvgs.Marker_4TurboProp,
+                    size: { width: 36, height: 36 },
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'DC6'; }
+                }));                             
                 VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //BOAT1
                     normalFileName: 'Marker_Airplane.png',
                     selectedFileName: 'Marker_AirplaneSelected.png',
@@ -983,7 +990,7 @@
                     size: { width: 35, height: 35 },
                     matches: function( aircraft) { return aircraft.modelIcao.val === 'RFAL'; }    
                 }));
-                    VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //Rafale
+                    VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //Harrier
                     normalFileName: 'Marker_Airplane.png',
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeHAR,
