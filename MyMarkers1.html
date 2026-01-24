@@ -166,7 +166,7 @@
                     if (aircraft.operator.val.match(/^(?!.*(?:Fireblade|Firefly|Firebird|spitfire|starfire|Fire\sUp|solidfire))(?=.*fire).*$/i)) {
                     return "#CE5200";  // orange
                     }
-                    if(aircraft.operator.val.match(/(?!Air\sMediterranean)air\smed|airmed|med-trans|medevac|ambulance|hospital|medical|adac|doctor|luftrettung|rettungsflugwacht|luftambulanse|mercy|life\sflight/i)) {
+                    if(aircraft.operator.val.match(/(?!Air\sMediterranean)air\smed|airmed|med-trans|medevac|ambulance|hospital|medical|adac|doctor|luftrettung|rettungsflugwacht|luftambulanse|Air\sMethods|Air\sEvac\sEMS|mercy|life\sflight/i)) {
                     return "#99d0ea";  // light blue
                     }
                     if(aircraft.operator.val.match(/draken|gfd|top\saces|airborne\stactical\sadvantage|Air\sUSA|coastal\sdefense|tactical\sair\ssupport|meta\saerospace|aec\sskyline\saviation|aviation\sdefence\sservice|fr\saviation|hunter\saviation|RAVN\sAerospace/i)) {
@@ -914,7 +914,7 @@
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeBJSPTWM,
                     size: { width: 27, height: 27 },
-                    matches: function( aircraft) { return aircraft.modelIcao.val === 'FA20' || aircraft.modelIcao.val === 'C680' || aircraft.modelIcao.val === 'C700' || aircraft.modelIcao.val === 'C68A' || aircraft.modelIcao.val === 'C750' || aircraft.modelIcao.val === 'F2TH' || aircraft.modelIcao.val === 'FA50' || aircraft.modelIcao.val === 'CL30' || aircraft.modelIcao.val === 'CL35' || aircraft.modelIcao.val === 'CL60' || aircraft.modelIcao.val === 'F900' || aircraft.modelIcao.val === 'GALX' || aircraft.modelIcao.val === 'G280' || aircraft.modelIcao.val === 'HA4T' || aircraft.modelIcao.val === 'FA7X' || aircraft.modelIcao.val === 'FA8X' || aircraft.modelIcao.val === 'GLF2' || aircraft.modelIcao.val === 'GLF3' || aircraft.modelIcao.val === 'GLF4' || aircraft.modelIcao.val === 'GLF5'; }
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'FA20' || aircraft.modelIcao.val === 'C680' || aircraft.modelIcao.val === 'C700' || aircraft.modelIcao.val === 'C68A' || aircraft.modelIcao.val === 'C750' || aircraft.modelIcao.val === 'F2TH' || aircraft.modelIcao.val === 'FA50' || aircraft.modelIcao.val === 'CL30' || aircraft.modelIcao.val === 'CL35' || aircraft.modelIcao.val === 'CL60' || aircraft.modelIcao.val === 'F900' || aircraft.modelIcao.val === 'GALX' || aircraft.modelIcao.val === 'G280' || aircraft.modelIcao.val === 'HA4T' || aircraft.modelIcao.val === 'FA6X' || aircraft.modelIcao.val === 'FA7X' || aircraft.modelIcao.val === 'FA8X' || aircraft.modelIcao.val === 'GLF2' || aircraft.modelIcao.val === 'GLF3' || aircraft.modelIcao.val === 'GLF4' || aircraft.modelIcao.val === 'GLF5'; }
                 }));    
                 VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //GND
                     normalFileName: 'Marker_Airplane.png',
@@ -956,7 +956,7 @@
                     selectedFileName: 'Marker_AirplaneSelected.png',
                     embeddedSvg: VRS.EmbeddedSvgs.Marker_TypeF18,
                     size: { width: 30, height: 30 },
-                    matches: function( aircraft) { return aircraft.modelIcao.val === 'F18H'|| aircraft.modelIcao.val === 'F18S'; }    
+                    matches: function( aircraft) { return aircraft.modelIcao.val === 'F18H'|| aircraft.modelIcao.val === 'F18S' || aircraft.modelIcao.val === 'MG29'; }    
                 }));
                 VRS.globalOptions.aircraftMarkers.unshift(new VRS.AircraftMarker({ //Hawkeye
                     normalFileName: 'Marker_Airplane.png',
